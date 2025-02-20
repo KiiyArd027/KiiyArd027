@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MDA - Personal Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- button -->
+    <style>
+      .wrapper {
+        display: inline-flex;
+        list-style: none;
+        height: 120px;
+        width: 100%;
+        padding-top: 40px;
+        font-family: "Poppins", sans-serif;
+        justify-content: center;
+      }
+
+      .wrapper .icon {
+        position: relative;
+        background: #fff;
+        border-radius: 50%;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .wrapper .tooltip {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+        background: #fff;
+        color: #fff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .wrapper .tooltip::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background: #fff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .wrapper .icon:hover .tooltip {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .wrapper .icon:hover span,
+      .wrapper .icon:hover .tooltip {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .wrapper .facebook:hover,
+      .wrapper .facebook:hover .tooltip,
+      .wrapper .facebook:hover .tooltip::before {
+        background: #1877f2;
+        color: #fff;
+      }
+
+      .wrapper .twitter:hover,
+      .wrapper .twitter:hover .tooltip,
+      .wrapper .twitter:hover .tooltip::before {
+        background: #1da1f2;
+        color: #fff;
+      }
+
+      .wrapper .instagram:hover,
+      .wrapper .instagram:hover .tooltip,
+      .wrapper .instagram:hover .tooltip::before {
+        background: #c203e9;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">MDA</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content">
+              <div class="hero-text">
+                <p>I'm</p>
+                <h1>M Dzaky A</h1>
+                <h2></h2>
+                <div class="typed-text">
+                  Hallo, Selamat Pagi :), Selamat Siang :), Selamat Malam:)
+                </div>
+              </div>
+              <div class="hero-btn">
+                <a class="btn" href="#about">About Me</a>
+                <a class="btn" href="#contact">Contact Me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-none d-md-block">
+            <div class="hero-image">
+              <img src="img/1.png" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Plan</p>
+          <h2>My Training Portfolio</h2>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul id="portfolio-filter">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-1">Coding Teacher</li>
+              <li data-filter=".filter-3">Web Tugas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio-container">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-1.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>w3schools</h3>
+                <a class="btn" href="https://www.w3schools.com/" target="_blank"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-2.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Web Programming UNPAS</h3>
+                <a
+                  class="btn"
+                  href="https://www.youtube.com/@sandhikagalihWPU"
+                  target="_blank"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-3.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Mimo</h3>
+                <a class="btn" href="https://mimo.org/" target="_blank">+</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-4.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>HTML Codex</h3>
+                <a class="btn" href="https://htmlcodex.com/" target="_blank"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-5.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Bootstrap</h3>
+                <a class="btn" href="https://getbootstrap.com/" target="_blank"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp"
+            data-wow-delay="1s"
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/portfolio-6.jpg" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Web Tugas Sekolah</h3>
+                <a
+                  class="btn"
+                  href="https://tokostoregt.github.io"
+                  target="_blank"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+      <div class="container">
+        <div class="testimonial-icon">
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/motivasi.jpg" />
+            </div>
+            <div class="testimonial-text">
+              <p>
+                Kesuksesan bukan soal siapa yang paling cepat, tapi siapa yang
+                paling gigih dan tidak pernah menyerah. 🚀
+              </p>
+              <h3>ChatGpt</h3>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/motivasi.jpg" />
+            </div>
+            <div class="testimonial-text">
+              <p>
+                Jangan takut gagal, karena setiap langkah yang kamu ambil,
+                sekecil apa pun, tetap membawamu lebih dekat ke impianmu.
+              </p>
+              <h3>ChatGpt</h3>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/motivasi.jpg" />
+            </div>
+            <div class="testimonial-text">
+              <p>
+                Hari ini mungkin sulit, tapi ingat, badai tidak pernah
+                berlangsung selamanya—kamu lebih kuat dari yang kamu kira!
+              </p>
+              <h3>ChatGpt</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="team" id="about">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>history</p>
+          <h2>School History</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/sd.jpg" alt="Image" />
+              </div>
+              <div class="team-text">
+                <h2>SDN Kepatihan 01 Jember</h2>
+                <h4>Jl. Dr. Sutomo No. 16</h4>
+                <div class="team-social">
+                  <a
+                    class="btn"
+                    href="https://www.instagram.com/sdnkepatihan1jember/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://referensi.data.kemdikbud.go.id/tabs.php?npsn=20523608"
+                    target="_blank"
+                    ><i class="fab fa-google"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/mts.jpg" alt="Image" />
+              </div>
+              <div class="team-text">
+                <h2>MtsN 01 Jember</h2>
+                <h4>Jl. Imam Bonjol No. 1</h4>
+                <div class="team-social">
+                  <a
+                    class="btn"
+                    href="https://www.facebook.com/mtsn1jember"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://www.instagram.com/mtsn1jember/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://www.mtsn1jember.com/"
+                    target="_blank"
+                    ><i class="fab fa-google"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/man.jpg" alt="Image" />
+              </div>
+              <div class="team-text">
+                <h2>MAN 1 Jember</h2>
+                <h4>Jl. Imam Bonjol No. 50</h4>
+                <div class="team-social">
+                  <a
+                    class="btn"
+                    href="https://x.com/man1jember_ofc"
+                    target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://www.facebook.com/manjember1"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://www.instagram.com/man1jember_official/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    class="btn"
+                    href="https://man1jember.sch.id/"
+                    target="_blank"
+                    ><i class="fab fa-google"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/univ.jpg" alt="Image" />
+              </div>
+              <div class="team-text">
+                <h2>Universitas</h2>
+                <h4>Coming Soon</h4>
+                <div class="team-social">
+                  <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+              <div class="contact-form">
+                <div id="success"></div>
+                <form
+                  name="sentMessage"
+                  id="contactForm"
+                  novalidate="novalidate"
+                >
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required="required"
+                      data-validation-required-message="Please enter your name"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required="required"
+                      data-validation-required-message="Please enter your email"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                      required="required"
+                      data-validation-required-message="Please enter a subject"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                      required="required"
+                      data-validation-required-message="Please enter your message"
+                    ></textarea>
+                    <p class="help-block"></p>
+                  </div>
+                  <div>
+                    <button class="btn" type="submit" id="sendMessageButton">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Blog Start -->
+    <div class="blog" id="blog">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Game</p>
+          <h2>Fav Game</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+              <div class="blog-img">
+                <img src="img/blog-1.jpg" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Growtopia</h2>
+                <p style="text-align: justify">
+                  Growtopia is a free-to-play sandbox MMO game with almost
+                  endless possibilities for world creation, customization and
+                  having fun with your friends. Enjoy thousands of items,
+                  challenges and events.
+                </p>
+                <br /><br />
+                <a class="btn" href="https://growtopiagame.com" target="_blank"
+                  >Read More <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-img">
+                <img src="img/blog-2.jpg" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Free Fire</h2>
+                <p style="text-align: justify">
+                  Free Fire is a free-to-play battle royale game developed and
+                  published by Garena for Android and iOS.It was released on 8
+                  December 2017.Garena is a platform for gamers to play, connect
+                  and explore. It provides access to the best games and features
+                  available on the platform
+                </p>
+                <br />
+                <a class="btn" href="https://ff.garena.com/id" target="_blank"
+                  >Read More <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="footer-info">
+            <div class="footer-social">
+              <ul class="wrapper">
+                <a href="https://web.facebook.com/dzaky.jember" target="_blank">
+                  <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <svg
+                      viewBox="0 0 320 512"
+                      height="1.2em"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path>
+                    </svg>
+                  </li>
+                </a>
+                <a href="https://x.com/DzakyArdnt" target="_blank">
+                  <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <svg
+                      height="1.8em"
+                      fill="currentColor"
+                      viewBox="0 0 48 48"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="twitter"
+                    >
+                      <path
+                        d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                      ></path>
+                    </svg>
+                  </li>
+                </a>
+
+                <!-- instagram -->
+                <a href="https://www.instagram.com/kiiy_ar/" target="_blank">
+                  <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1.2em"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      ></path>
+                    </svg>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright">
+          <p>
+            &copy; <a href="index.html">M Dzaky Ardianto</a>, All Right Reserved
+            |
+
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+      <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
